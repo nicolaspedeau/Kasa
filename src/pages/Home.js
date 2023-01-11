@@ -5,9 +5,7 @@ function Home() {
     return (
       <div>
         <Banner/>
-        <div className='container'>
-          <Card/>
-        </div>
+        <Card/>
       </div>
     )
   }

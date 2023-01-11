@@ -6,6 +6,10 @@ import Home from "./pages/Home";
 import Found from "./pages/Error";
 
 
+
+
+
+
 function Router (){
     return(
         <Routes>
