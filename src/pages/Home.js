@@ -3,10 +3,12 @@ import Card from '../components/Card';
 
 function Home() {
     return (
-      <div>
-        <Banner/>
-        <Card/>
-      </div>
+      <section className='corps_home'>
+        <Banner banniere="home"/>
+        <section className='card'>
+          <Card/>
+        </section>
+      </section>
     )
   }
   

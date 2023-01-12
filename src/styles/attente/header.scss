@@ -1,10 +1,10 @@
 .top{
-    position: absolute;
-    width: 1240px;
+    width: 90%;
     height: 68px;
     top: 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     &__logo{
 
     }
@@ -20,7 +20,7 @@
             font-weight: 500;
             font-size: 24px;
             line-height: 142.6%;
-            padding-right: 40px;
+            padding-left: 40px;
             /* or 34px */
 
             display: flex;

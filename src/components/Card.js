@@ -1,22 +1,17 @@
-import * as logement from "../item.json"
-import "../styles/card.scss"
+import products from "../data/product.json"
 import { Link } from 'react-router-dom'
-
-const Item = logement.default;
 
 
 
 function Card() {
-    return (
-        <article className="container">
-            {Item.map((logement) => (
-            <Link key={logement.id} to="/logement/:id">
-                <img src={logement.cover} alt={logement.title}/>
-                <h2>{logement.title}</h2>
+    return products.map((product) => (
+        <Link className="card_product" key={product.id} to={`/logement/${product.id}`}>
+                <img className="card_product_img" src={product.cover} alt={product.title}/>
+                <div className="card_product_text">
+                    <h2>{product.title}</h2>
+                </div>
             </Link>
-            ))}
-        </article>
-    )
+    ))
 }
 
 export default Card;

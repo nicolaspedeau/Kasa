@@ -7,9 +7,6 @@ import Found from "./pages/Error";
 
 
 
-
-
-
 function Router (){
     return(
         <Routes>
