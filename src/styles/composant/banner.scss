@@ -1,0 +1,33 @@
+.banner{
+    top: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    & h1{
+        position: absolute;
+        z-index: 10;
+        color: $color-secundary;
+        font-size: 50px;
+        padding-top: 20px;
+        @include mobile-only{
+            font-size: 30px;
+            width: 268px;
+            left: 50px;
+            top: 130px;
+        }
+    }
+    &_home{
+        border-radius: 20px;
+        filter:brightness(70%);
+        height: 200px;
+        width: 90%;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: 40% ;
+        @include mobile-only{
+            object-position: 100% 65%;
+        }
+    }
+}

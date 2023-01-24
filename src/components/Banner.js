@@ -1,5 +1,5 @@
 import mer from '../assets/banner.png';
-import montagne from '../assets/montagne.png';
+import montagne from '../assets/montagne.jpg';
 
 
 function Banner(props) {
@@ -7,13 +7,15 @@ function Banner(props) {
     if (props.banniere){
         return(
         <section className='banner'>
+            <div style={{ backgroundImage: `url(${mer})`}} className='banner_home'>
+            </div>
             <h1>Chez vous, partout et ailleurs</h1>
-            <img src={mer} alt="bannière"></img>
         </section>
     )} else if(props.montagne) {
         return(
         <section className='banner'>
-            <img src={montagne} alt="bannière"></img>
+            <div style={{ backgroundImage: `url(${montagne})`}} className='banner_home'>
+            </div>
         </section>
     )}
 }

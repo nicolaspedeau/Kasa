@@ -1,6 +1,6 @@
 import React from "react";
+import Footer from "./components/Footer";
 import Header from "./components/Header"
-// import Footer from "./components/Footer"
 import Router from "./Router"
 
 
@@ -9,6 +9,7 @@ function App () {
         <main>
             <Header/>
             <Router/>
+            <Footer/>
         </main>
     )
 }

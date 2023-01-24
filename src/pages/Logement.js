@@ -1,47 +1,46 @@
-import { Link, useParams } from 'react-router-dom'
+import {  useParams } from 'react-router-dom'
 import products from "../data/product.json"
-console.log(typeof products)
+import Collapse from '../components/Collapse';
+import Slideshow from '../components/Slideshow';
+import Tag from '../components/Tag';
+import { Navigate } from "react-router-dom";
+
+
 
 
 function Logement() {
   let {id} = useParams();
-  const goodProduct = products.filter(product => 
-    id === product.id
+  const goodProduct = products.find((produit) => 
+    produit.id === id
   )
-  console.log(goodProduct)
 
-  return goodProduct.map((product) => (
-    <section>
-      <div>
-        <img src={product.cover} alt="mainimage"></img>
-      </div>
-      <div>
-        <div>
-          <h1>{product.title}</h1>
-          <p>{product.location}</p>
-          <div>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
-        </div>
-        <div>
-          <div>
-            <p>{product.host.name}</p>
-            <img src={product.host.picture} alt="hostpicture"></img>
-          </div>
+  return  (
+    goodProduct ? (<section className='logement'>
+    <div className='containerSlideshow'>
+      <Slideshow slides={goodProduct.pictures}/>
+    </div>
+    <div className='logement-container'>
+      <div className='logement-title'>
+        <h1>{goodProduct.title}</h1>
+        <p>{goodProduct.location}</p>
+        <div className='logement-title_tags'>
+          <Tag tags={goodProduct.tags}/>
         </div>
       </div>
-      <div>
-        <div>
-        </div>
-        <div>
+      <div className='logement-user'>
+        <div className='logement-user_host'>
+          <p>{goodProduct.host.name}</p>
+          <img src={goodProduct.host.picture} alt="hostpicture"></img>
         </div>
       </div>
+    </div>
+    <section className="accordion_logement">
+        <Collapse title="equipement"  description={goodProduct.equipments}/>
+        <Collapse title="description"  description={goodProduct.description}/>
     </section>
-  ))
+  </section>) : (<Navigate to="/*" replace={true} />)
+    
+  )
   
         
   }

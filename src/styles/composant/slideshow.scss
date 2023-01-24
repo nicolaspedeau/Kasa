@@ -1,0 +1,49 @@
+.containerSlideshow{
+    width: 88%;
+    height: 450px;
+    margin: auto;
+}
+
+.slides{
+    height: 100%;
+    position: relative;
+    width: 100%;
+    &_leftarrow{
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 32px;
+        font-size: 45px;
+        color: $color-secundary;
+        z-index: 1;
+        cursor: pointer;
+    }
+    &_img{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center ;
+        border-radius: 10px;
+    }
+    &_rightarrow{
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: 32px;
+        font-size: 45px;
+        color: $color-secundary;
+        z-index: 1;
+        cursor: pointer;
+    }
+    &_position{
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        bottom: 2%;
+        color: $color-secundary;
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+}

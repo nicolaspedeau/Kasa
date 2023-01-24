@@ -1,6 +1,15 @@
-@import "./attente/app.scss",
-"./attente/banner.scss",
-"./attente/header.scss",
-"./attente/error.scss",
-"./attente/card.scss",
-"./attente/home.scss"
+@import 
+"./utils/variables.scss",
+"./utils/mixin.scss",
+"./base/app.scss",
+"./composant/banner.scss",
+"./composant/header.scss",
+"./page/error.scss",
+"./composant/card.scss",
+"./page/home.scss",
+"./composant/collapse.scss",
+"./base/font.scss",
+"./composant/footer.scss",
+"./composant/slideshow.scss",
+"./page/logement.scss",
+"./composant/tag.scss"

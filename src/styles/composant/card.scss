@@ -5,22 +5,26 @@
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #F6F6F6 ;
+    background-color: $color-tertiary ;
     width: 95%;
     border-radius: 20px;
+    @include mobile-only{
+        flex-direction: column;
+    }
     &_product{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 30%;
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
         margin: 10px 0 10px 0;
+        box-shadow: 0 -45px 20px 0px rgb(0 0 0 / 30%) inset;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center ;
+        margin: 20px;
 
-        &_img{
-            width: 300px;
-            height: 300px;
-            border-radius: 10px;
-            box-shadow: inset 10px 10px 10px  black;
-        }
         &_text{
             position: absolute;
             width: 200px;
@@ -28,7 +32,7 @@
                 position: absolute;
                 top: 80px;
                 left: -25px;
-                color: white;
+                color: $color-secundary;
                 font-size: 17px;
             }
         }

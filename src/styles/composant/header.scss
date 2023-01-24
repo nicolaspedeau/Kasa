@@ -6,7 +6,9 @@
     justify-content: space-between;
     align-items: center;
     &__logo{
-
+        @include mobile-only{
+            width: 150px;
+        }
     }
     &__nav{
         & nav{
@@ -28,7 +30,7 @@
             text-align: right;
             text-decoration-line: underline;
 
-            color: #FF6060;
+            color: $color-primary;
         }
     }
 
