@@ -3,24 +3,36 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    &-collapse-container{
+        width: 75%;
+        display: flex;
+        justify-content: center;
+    }
     &_logement{
         display: flex;
         flex-direction: row;
         width: 95%;
+        &-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
         @include mobile-only{
             flex-direction: column;
         }
     }
     &_item{
-        width:75%;
+        width:90%;
         display: flex;
         flex-direction: column;
         margin-bottom: 30px;
         border-radius: 7px;
         background-color: $color-tertiary;
         transition: all 0.5s cubic-bezier(0,1,0,1);
-        margin-left: 40px;
-        margin-right: 40px;
+        @include mobile-only{
+            margin-left: 0;
+            width: 100%;
+        }
         &_list{
             background-color: $color-tertiary;
         }
@@ -35,6 +47,9 @@
             justify-content: space-between;
             align-items: center;
             cursor: pointer;
+            @include mobile-only{
+                font-size: 7px;
+            }
             & span{
                 margin-right: 30px;
             }

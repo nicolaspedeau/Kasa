@@ -4,6 +4,7 @@ import Collapse from '../components/Collapse';
 import Slideshow from '../components/Slideshow';
 import Tag from '../components/Tag';
 import { Navigate } from "react-router-dom";
+import Rating from "../components/Rating";
 
 
 
@@ -32,13 +33,18 @@ function Logement() {
           <p>{goodProduct.host.name}</p>
           <img src={goodProduct.host.picture} alt="hostpicture"></img>
         </div>
+        <Rating stars={goodProduct.rating}/>
       </div>
     </div>
     <section className="accordion_logement">
-        <Collapse title="equipement"  description={goodProduct.equipments}/>
-        <Collapse title="description"  description={goodProduct.description}/>
+      <div className='accordion_logement-container'>
+          <Collapse  title="Description"  description={goodProduct.description}/>
+      </div>
+      <div className='accordion_logement-container'>
+        <Collapse title="Equipement"  description={goodProduct.equipments}/>
+      </div>
     </section>
-  </section>) : (<Navigate to="/*" replace={true} />)
+  </section>) : (<Navigate to="/error" replace={true} />)
     
   )
   

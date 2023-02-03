@@ -5,32 +5,35 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
     &__logo{
         @include mobile-only{
-            width: 150px;
+            width: 100px;
         }
     }
     &__nav{
         & nav{
             display: flex;
             justify-content:flex-end;
-            width: 309px;
-        }
-        & a{
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 500;
+            width: 100%;}
+        
+        &-text{
             font-size: 24px;
             line-height: 142.6%;
-            padding-left: 40px;
-            /* or 34px */
-
+            padding-left: 22px;
+            text-decoration: none;
             display: flex;
             align-items: flex-end;
             text-align: right;
-            text-decoration-line: underline;
 
             color: $color-primary;
+            @include mobile-only{
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+        }
+        &-active{
+            text-decoration: underline;
         }
     }
 

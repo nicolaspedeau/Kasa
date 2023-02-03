@@ -1,5 +1,5 @@
 .containerSlideshow{
-    width: 88%;
+    width: 90%;
     height: 450px;
     margin: auto;
 }
@@ -17,6 +17,9 @@
         color: $color-secundary;
         z-index: 1;
         cursor: pointer;
+        @include mobile-only{
+            width: 20px;
+        }
     }
     &_img{
         width: 100%;
@@ -31,10 +34,12 @@
         top: 50%;
         transform: translate(0, -50%);
         right: 32px;
-        font-size: 45px;
         color: $color-secundary;
         z-index: 1;
         cursor: pointer;
+        @include mobile-only{
+            width: 20px;
+        }
     }
     &_position{
         position: absolute;

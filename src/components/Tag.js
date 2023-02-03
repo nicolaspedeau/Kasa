@@ -8,8 +8,8 @@ const Tag = () => {
     )
     const tags = goodProduct[0].tags
 
-    return tags.map((product) =>(
-        <div className='tag'>
+    return tags.map((product, index) =>(
+        <div key={index} className='tag'>
             <p>{product}</p>
         </div>
     ))

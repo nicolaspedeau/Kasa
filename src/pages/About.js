@@ -11,7 +11,9 @@ function About() {
       <section className="accordion">
         {dataCollapse.map((text, id) =>{
           return(
-          <Collapse title={text.valeur} key={id} description={text.description}/>)
+          <div className='accordion-collapse-container'>
+            <Collapse title={text.valeur} key={id} description={text.description}/>
+          </div>)
         })}
       </section>
     </section>

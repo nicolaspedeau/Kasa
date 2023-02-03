@@ -24,6 +24,10 @@
         background-position-x: center;
         background-position-y: center ;
         margin: 20px;
+        @include mobile-only{
+            width: 260px;
+            height: 260px;
+        }
 
         &_text{
             position: absolute;
@@ -34,6 +38,9 @@
                 left: -25px;
                 color: $color-secundary;
                 font-size: 17px;
+                @include mobile-only{
+                    font-size: 12px;
+                }
             }
         }
     }

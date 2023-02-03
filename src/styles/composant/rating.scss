@@ -1,0 +1,11 @@
+.rating-contener{
+    @include mobile-only{
+    width: 140px;
+    }
+    &_stars{
+        margin-right: 10px;
+        @include mobile-only{
+            width: 17px;
+        }
+    }
+}

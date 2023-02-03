@@ -18,6 +18,8 @@ const Slideshow = ({slides}) => {
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
     }
+    const lengthSlide = slides.length;
+
 
     return (
         <div className="slides">
@@ -26,7 +28,7 @@ const Slideshow = ({slides}) => {
             </div>
             <img className="slides_rightarrow" src={rightarrow}  alt="movetotheright" onClick={goToNext}></img>
             <div className="slides_position">
-                <p>{currentIndex + 1}/{slideImg.length}</p>
+                <p>{currentIndex + 1}/{lengthSlide}</p>
             </div>
         </div>
     )
