@@ -8,14 +8,14 @@ function About() {
   return (
     <section className="corps_home">
       <Banner montagne="about"/>
-      <section className="accordion">
+      <article className="accordion">
         {dataCollapse.map((text, id) =>{
           return(
           <div className='accordion-collapse-container'>
             <Collapse title={text.valeur} key={id} description={text.description}/>
           </div>)
         })}
-      </section>
+      </article>
     </section>
   )
 }

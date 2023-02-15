@@ -234,8 +234,6 @@ body {
   flex-direction: column;
   margin-bottom: 30px;
   border-radius: 7px;
-  background-color: #F6F6F6;
-  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
 }
 @media screen and (max-width: 768px) {
   .accordion_item {
@@ -245,6 +243,19 @@ body {
 }
 .accordion_item_list {
   background-color: #F6F6F6;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  padding-top: 20px;
+  margin-top: 0;
+  padding-bottom: 30px;
+  border-radius: 11px;
+  position: relative;
+  bottom: 6px;
+  min-height: 130px;
+}
+.accordion_item_list :before {
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
 }
 .accordion_item_title {
   background-color: #FF6060;
@@ -257,6 +268,7 @@ body {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  z-index: 2;
 }
 @media screen and (max-width: 768px) {
   .accordion_item_title {
@@ -269,10 +281,19 @@ body {
 .accordion_item_content_show {
   height: auto;
   max-height: 9999px;
-  transition: all 1s cubic-bezier(1, 0, 1, 0);
-  font-size: 22px;
-  margin: 20px;
+  font-size: 18px;
   color: #FF6060;
+  background-color: #F6F6F6;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  padding-top: 20px;
+  padding-left: 10px;
+  margin-top: 0;
+  padding-bottom: 20px;
+  border-radius: 11px;
+  position: relative;
+  bottom: 6px;
+  min-height: 140px;
 }
 
 * {

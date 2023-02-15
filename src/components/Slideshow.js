@@ -2,8 +2,6 @@ import { useState } from "react";
 import leftarrow from "../assets/leftarrow.svg";
 import rightarrow from "../assets/rightarrow.svg";
 
-
-
 const Slideshow = ({slides}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const slideImg = `${slides[currentIndex]}`;
