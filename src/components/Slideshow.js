@@ -22,7 +22,8 @@ const Slideshow = ({slides}) => {
     return (
         <div className="slides">
             <img className="slides_leftarrow" src={leftarrow} alt="movetotheleft" onClick={goToPrevious}></img>
-            <div style={{ backgroundImage: `url(${slideImg})`}} className="slides_img">
+            <div className="slides_img">
+                <img src={slideImg} alt=""/>
             </div>
             <img className="slides_rightarrow" src={rightarrow}  alt="movetotheright" onClick={goToNext}></img>
             <div className="slides_position">

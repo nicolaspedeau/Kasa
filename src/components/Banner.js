@@ -6,17 +6,19 @@ function Banner(props) {
     
     if (props.banniere){
         return(
-        <section className='banner'>
-            <div style={{ backgroundImage: `url(${mer})`}} className='banner_home'>
+        <article className='banner'>
+            <div className='banner_home'>
+                <img className='banner_home_mer' src={mer} alt='photomer'></img>
             </div>
             <h1>Chez vous, partout et ailleurs</h1>
-        </section>
+        </article>
     )} else if(props.montagne) {
         return(
-        <section className='banner'>
-            <div style={{ backgroundImage: `url(${montagne})`}} className='banner_home'>
+        <article className='banner'>
+            <div  className='banner_home'>
+                <img className='banner_home_montagne' src={montagne} alt='photomontagne'></img>
             </div>
-        </section>
+        </article>
     )}
 }
 

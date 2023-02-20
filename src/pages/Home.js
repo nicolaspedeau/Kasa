@@ -5,9 +5,9 @@ function Home() {
     return (
       <section className='corps_home'>
         <Banner banniere="home"/>
-        <section className='card'>
+        <div className='cards'>
           <Card/>
-        </section>
+        </div>
       </section>
     )
   }

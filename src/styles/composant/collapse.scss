@@ -3,6 +3,10 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-bottom: 100px;
+    @include mobile-only{
+        margin-top: 20px;
+    }
     &-collapse-container{
         width: 75%;
         display: flex;
@@ -26,7 +30,7 @@
         width:90%;
         display: flex;
         flex-direction: column;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         border-radius: 7px;
 
         @include mobile-only{
@@ -43,7 +47,8 @@
             border-radius: 11px;
             position: relative;
             bottom: 6px;
-            min-height: 130px;
+            list-style-type: none;
+            font-size: 18px;
             :before{
                 transition:height 0.3s ease-in-out;
                 transition-delay: 0.1s;  
@@ -70,21 +75,20 @@
         }
         &_content{
             &_show{
-                height: auto;
-                max-height: 9999px;
-                font-size: 18px;
-                color: $color-primary;
                 background-color: #F6F6F6;
                 transition: height 0.3s ease-in-out;
                 transition-delay: 0.1s;
                 padding-top: 20px;
-                padding-left: 10px;
                 margin-top: 0;
-                padding-bottom: 20px;
+                padding-bottom: 30px;
                 border-radius: 11px;
                 position: relative;
                 bottom: 6px;
-                min-height: 140px;
+                list-style-type: none;
+                font-size: 18px;
+                padding-left: 10px;
+                color: $color-primary;
+                margin-bottom: 0;
             }
         }
     }
