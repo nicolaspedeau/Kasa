@@ -23,7 +23,7 @@ const Slideshow = ({slides}) => {
         <div className="slides">
             <img className="slides_leftarrow" src={leftarrow} alt="movetotheleft" onClick={goToPrevious}></img>
             <div className="slides_img">
-                <img src={slideImg} alt=""/>
+                <img src={slideImg} alt="photologement"/>
             </div>
             <img className="slides_rightarrow" src={rightarrow}  alt="movetotheright" onClick={goToNext}></img>
             <div className="slides_position">
