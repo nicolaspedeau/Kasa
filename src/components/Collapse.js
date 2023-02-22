@@ -1,4 +1,6 @@
 import { useState } from  'react';
+import arrowdown from '../assets/arrowDown.png';
+import arrowup from '../assets/arrowUp.png';
 
 
 function Collapse (props){
@@ -9,7 +11,7 @@ function Collapse (props){
         <div className="accordion_item">
             <div className="accordion_item_title" onClick={() => {setOpen(!open)}}>
                 <h2>{props.title}</h2>
-                <span>{open  ? <i className="fa-solid fa-angle-up"></i> : <i className="fa-solid fa-angle-down"></i>}</span>
+                <span>{open  ? <img src={arrowdown} alt='arrowdown'></img> : <img src={arrowup}  alt='arrowup'></img>}</span>
             </div>{
                 open && (Array.isArray(props.description) ? (
                     <ul className='accordion_item_list '>

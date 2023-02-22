@@ -12,7 +12,7 @@ function Banner(props) {
             </div>
             <h1>Chez vous, partout et ailleurs</h1>
         </article>
-    )} else if(props.montagne) {
+    )} else {
         return(
         <article className='banner'>
             <div  className='banner_home'>
