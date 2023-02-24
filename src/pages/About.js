@@ -11,8 +11,8 @@ function About() {
       <article className="accordion">
         {dataCollapse.map((text, id) =>{
           return(
-          <div className='accordion-collapse-container'>
-            <Collapse title={text.valeur} key={id} description={text.description}/>
+          <div key={id} className='accordion-collapse-container'>
+            <Collapse title={text.valeur}  description={text.description}/>
           </div>)
         })}
       </article>
