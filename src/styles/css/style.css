@@ -222,6 +222,11 @@ figure h2 {
   margin: auto;
   z-index: 2;
 }
+@media screen and (max-width: 768px) {
+  figure h2 {
+    bottom: 45px;
+  }
+}
 
 .cards {
   display: flex;
@@ -341,6 +346,11 @@ figure h2 {
 }
 .accordion_item_title span {
   margin-right: 30px;
+}
+@media screen and (max-width: 768px) {
+  .accordion_item_title img {
+    width: 20px;
+  }
 }
 .accordion_item_content_show {
   background-color: #F6F6F6;

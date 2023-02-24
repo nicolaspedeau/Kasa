@@ -72,6 +72,11 @@
             & span{
                 margin-right: 30px;
             }
+            & img{
+                @include mobile-only{
+                    width: 20px;
+                }
+            }
         }
         &_content{
             &_show{

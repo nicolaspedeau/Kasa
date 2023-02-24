@@ -41,6 +41,9 @@ figure{
         width: 80%;
         margin: auto;
         z-index: 2;
+        @include mobile-only{
+            bottom: 45px;
+        }
     }
 }
 
