@@ -11,7 +11,7 @@ function Collapse (props){
         <div className="accordion_item">
             <div className="accordion_item_title" onClick={() => {setOpen(!open)}}>
                 <h2>{props.title}</h2>
-                <span>{open  ? <img src={arrowdown} alt='arrowdown'></img> : <img src={arrowup}  alt='arrowup'></img>}</span>
+                <span>{open  ? <img src={arrowup} alt='arrowdown'></img> : <img src={arrowdown}  alt='arrowup'></img>}</span>
             </div>{
                 open && (Array.isArray(props.description) ? (
                     <ul className='accordion_item_list '>
