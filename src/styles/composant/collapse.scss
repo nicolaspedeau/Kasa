@@ -53,6 +53,9 @@
                 transition:height 0.3s ease-in-out;
                 transition-delay: 0.1s;  
             }
+            @include mobile-only{
+                font-size: 10px;
+            }
         }
         &_title{
             background-color: $color-primary ;
@@ -94,6 +97,9 @@
                 padding-left: 10px;
                 color: $color-primary;
                 margin-bottom: 0;
+                @include mobile-only{
+                    font-size: 8px;
+                }
             }
         }
     }

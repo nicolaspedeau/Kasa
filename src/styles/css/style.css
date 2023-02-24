@@ -326,6 +326,11 @@ figure h2 {
   transition: height 0.3s ease-in-out;
   transition-delay: 0.1s;
 }
+@media screen and (max-width: 768px) {
+  .accordion_item_list {
+    font-size: 10px;
+  }
+}
 .accordion_item_title {
   background-color: #FF6060;
   color: #F6F6F6;
@@ -367,6 +372,11 @@ figure h2 {
   padding-left: 10px;
   color: #FF6060;
   margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .accordion_item_content_show {
+    font-size: 8px;
+  }
 }
 
 * {
